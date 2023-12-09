@@ -16,9 +16,9 @@ typedef  int  hstack_t;
 
 typedef  struct  stack_t_element
 {
-	uint32_t  size_element;
+    uint32_t  size_element;
     void  * data;
-	struct  stack_t_element  * prev;
+    struct  stack_t_element  * prev;
 }  stack_t_element;
 
 
@@ -26,10 +26,10 @@ typedef  struct  stack_t_element
 typedef  struct  node_t
 {
     hstack_t  hstack;
-	stack_t_element  * stack;
-	int32_t  stack_size;
-	struct  node_t  * next;  
-	struct  node_t  * prev;
+    stack_t_element  * stack;
+    int32_t  stack_size;
+    struct  node_t  * next;  
+    struct  node_t  * prev;
 }  node_t;
 
 
@@ -37,7 +37,7 @@ typedef  struct  node_t
 typedef  struct
 {
     node_t  * head;
-	node_t  * tail;
+    node_t  * tail;
 }  list_t;
 
 
